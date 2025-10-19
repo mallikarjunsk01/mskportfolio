@@ -2056,7 +2056,7 @@ p {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-3xl);
   margin-top: var(--spacing-2xl);
 }
