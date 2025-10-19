@@ -2185,6 +2185,7 @@ p {
   text-decoration: none;
   transition: var(--transition-smooth);
   height: 100%;
+  width: 100%;
 }
 
 .contact-method:hover {
@@ -2212,6 +2213,7 @@ p {
   align-items: center;
   justify-content: center;
   color: white;
+  flex-shrink: 0;
 }
 
 .method-label {
@@ -2223,6 +2225,7 @@ p {
 .method-value {
   color: var(--text-secondary);
   font-size: 0.875rem;
+  word-break: break-word;
 }
 
 /* Footer */
