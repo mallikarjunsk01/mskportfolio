@@ -963,6 +963,14 @@ p {
   overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 11, 20, 0.82), rgba(10, 11, 20, 0.72));
+  z-index: 0;
+}
+
 /* Animated Background */
 .particles {
   position: absolute;
@@ -970,7 +978,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
+  pointer-events: none;
 }
 
 .hero-background {
@@ -1030,6 +1039,8 @@ p {
 }
 
 .hero-container {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -1037,6 +1048,8 @@ p {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
@@ -1194,6 +1207,7 @@ p {
   animation: bounce 2s infinite;
   cursor: pointer;
   transition: var(--transition-smooth);
+  z-index: 1;
 }
 
 .hero-scroll:hover {
