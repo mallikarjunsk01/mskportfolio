@@ -2152,9 +2152,9 @@ p {
 }
 
 .contact-methods {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-xl);
 }
 
 .contact-method {
@@ -2173,6 +2173,16 @@ p {
   background: rgba(59, 130, 246, 0.1);
   border-color: rgba(59, 130, 246, 0.3);
   transform: translateY(-3px);
+}
+
+.contact-method:not(a) {
+  cursor: default;
+}
+
+.contact-method:not(a):hover {
+  background: rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.2);
+  transform: none;
 }
 
 .method-icon {
@@ -2430,6 +2440,10 @@ p {
   }
   
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-methods {
     grid-template-columns: 1fr;
   }
   
