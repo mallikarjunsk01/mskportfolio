@@ -11,7 +11,7 @@ const skillProgress = document.querySelectorAll('.skill-progress');
 const contactForm = document.getElementById('contactForm');
 const modalOverlay = document.getElementById('modalOverlay');
 const modalBody = document.getElementById('modalBody');
-const RESUME_FILE_ID = '1_YT8jlIaFDrcmak-Bc_QPM31ALbZe-JH';
+const RESUME_FILE_ID = '1BFTeTzxhj-WkImmuSaIi7xvbG0GcjFvM';
 const RESUME_VIEW_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/view?usp=drivesdk`;
 const RESUME_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`;
 
