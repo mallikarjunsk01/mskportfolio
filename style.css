@@ -915,11 +915,11 @@ p {
 }
 
 .nav-logo-contact {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   line-height: 1.3;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .nav-menu {
@@ -2169,7 +2169,7 @@ p {
 
 .contact-methods {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--spacing-xl);
   width: 100%;
 }
